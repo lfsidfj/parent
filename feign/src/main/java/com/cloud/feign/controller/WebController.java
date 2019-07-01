@@ -14,4 +14,8 @@ public class WebController {
     public String sayHello(){
         return helloWorldFeignService.sayHello();
     }
+    @RequestMapping(value = "/user",method = RequestMethod.GET)
+    public String user(){
+        return helloWorldFeignService.user();
+    }
 }

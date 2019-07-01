@@ -13,4 +13,8 @@ public class RibbonController {
     public String getHelloContent() {
         return ribbonService.getHelloContent();
     }
+    @GetMapping("/user")
+    public String getUserContent() {
+        return ribbonService.getUserContent();
+    }
 }

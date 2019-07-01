@@ -12,4 +12,8 @@ public class ProductController {
     public String index(){
         return "hello world from port " + port;
     }
+    @GetMapping("/user")
+    public String user() throws InterruptedException {
+        return "user from port " + port;
+    }
 }
