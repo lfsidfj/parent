@@ -11,7 +11,7 @@ public class HelloWorldServiceFailure implements HelloWorldService {
     }
 
     @Override
-    public String user() {
+    public String sayUser() {
         System.out.println("user service is not available !");
         return "user service is not available !";
     }

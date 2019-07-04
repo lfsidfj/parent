@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductController {
     @Value("${server.port}")
     String port;
-    @GetMapping("/")
-    public String index(){
-        return "hello world from port " + port;
+    @GetMapping("/hello")
+    public String hello(){
+        return "hello from port " + port;
     }
     @GetMapping("/user")
-    public String user() throws InterruptedException {
+    public String user() {
         return "user from port " + port;
     }
 }
